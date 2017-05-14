@@ -2,7 +2,7 @@
 title: Vim Tricks
 email: hello@vimtricks.com
 description: > # this means to ignore newlines until "baseurl:"
-  Tricks, tips, plugins, configuration tweaks, and more the Vim text editor.
+  Tricks, tips, plugins, configuration tweaks, and more for the Vim text editor.
 baseurl: "" # the subpath of your site, e.g. /blog/
 url: "https://vimtricks.com" # the base hostname & protocol for your site
 logourl: /assets/images/logo.png # Site logo
