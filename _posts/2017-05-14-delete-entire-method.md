@@ -10,7 +10,7 @@ author:
   github: cbartlett
 ---
 
-A very common practice when refactoring is deleting entire methods or code blocks en masse. Vim makes this easy with `dap`, which you can remember as "Delete A Paragraph".
+A very common practice when refactoring code is deleting entire methods or code blocks en masse. One might be tempted to use visual select mode to select multiple lines, or simply to mash `dd`. But Vim makes deleting code blocks easy with `dap`. You can remember this as "Delete A Paragraph".
 
 This will delete every line before and after your current line until an empty line in either direction. It will also remove any extra empty trailing lines. For example, take the following ruby code:
 
