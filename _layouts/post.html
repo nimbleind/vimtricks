@@ -5,8 +5,8 @@ layout: default
 
   {% if page.banner_image %}
   <div class="banner-image">
-    <img 
-        src="{{ "/assets/images/" | append: page.banner_image | prepend: site.baseurl | prepend: site.url }}" 
+    <img
+        src="{{ "/assets/images/" | append: page.banner_image | prepend: site.baseurl | prepend: site.url }}"
         alt="{{ page.banner_image_alt }}">
   </div>
   {% endif %}
@@ -20,19 +20,25 @@ layout: default
   <header class="post-header">
     <h1 class="post-title">{{ page.title }}</h1>
     <p class="post-meta">
-    {% if (page.categories.size > 0 %}
+    {% if page.categories.size > 0 %}
       <span class="categories">
       {{ page.categories | array_to_sentence_string }}
       </span> |
     {% endif %}
     <span class="post-date">
-    {{ page.date | date: "%b %-d, %Y" }}{% if page.author %} • {{ page.author }}{% endif %}{% if page.meta %} • {{ page.meta }}{% endif %}  
+    {{ page.date | date: "%b %-d, %Y" }}
+
+    {% if page.author %}
+      {% if page.author.name %} • {{ page.author.name }}{% endif %}
+    {% endif %}
+
+    {% if page.meta %} • {{ page.meta }}{% endif %}
     </span>
     </p>
   </header>
 
   <article class="post-content">
-    {{ content }}    
+    {{ content }}
   </article>
 
   {% if site.related_posts %}
@@ -54,16 +60,43 @@ layout: default
   {% endif %}
 
   <div class="author-info">
-    {% if site.theme.show_author_info %}
-      {% include author.html %}
-    {% endif %}
-  
+    <div class="author">
+      <a href="{{ page.author.url || '#' }}">
+        <img class="gravatar" src="{{ page.author.email | to_gravatar }}?s=68"
+          alt="{{ page.author.name }}" width="60" height="60" />
+      </a>
+      <h5>Author</h4>
+      <h6>
+        <a href="{{ page.author.url }}">
+          {{ page.author.name }}
+        </a>
+      </h5>
+      <p>
+        {% if page.author.twitter or page.author.github %}
+          Find me on
+          {% if page.author.twitter %}
+              <a title="{{ page.author.name }} on Twitter"
+                  href="https://twitter.com/{{ page.author.twitter }}"
+                  class="twitter" target="_blank">Twitter</a>
+            {% if page.author.github %}
+              /
+            {% endif %}
+          {% endif %}
+          {% if page.author.github %}
+              <a title="{{ page.author.name }} on Github"
+                  href="https://github.com/{{ page.author.github }}"
+                  class="github" target="_blank">Github</a>
+          {% endif %}
+        {% endif %}
+      </p>
+    </div>
+
     {% if site.theme.show_share_buttons %}
       {% include share-buttons.html %}
-    {% endif %}  
+    {% endif %}
   </div>
-  
-  {% if page.comments %}
+
+  {% if site.comments %}
     <div class="comments">
         <a href="javascript:;" class="load-view">View Comments...</a>
         <div id="disqus_thread"></div>

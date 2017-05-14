@@ -5,7 +5,7 @@
 /**
  *
  * Gaya jekyll theme
- * Designed, built, by web-create. 
+ * Designed, built, by web-create.
  *
  * CONTENTS
  *
@@ -18,15 +18,15 @@
  *
  * GENERTIC
  * Resets               - Gloabal resets thanks to meyerweb.com
- * Body resets          - Body resets, box sizing 
- * 
+ * Body resets          - Body resets, box sizing
+ *
  * BASE
  * Typography           - Custom typography
  * Syntax               - Syntax highlighting
- * 
+ *
  * OBJECTS
  * Wrappers             - Wrapping and constraining elements.
- *  
+ *
  * COMPONENTS
  * header               - Site header
  * sidebar              - Sidebar & toggle
@@ -135,7 +135,7 @@ a {
 
 a:hover {
   @include transition(all .3s);
-  border-bottom-color: $color-1; 
+  border-bottom-color: $color-1;
 }
 
 /* Responsive images */
@@ -183,7 +183,7 @@ img {
 
 /*
  * Container - Centering the page content.
- * 
+ *
  */
 
 .container {
@@ -217,14 +217,14 @@ img {
   margin-bottom: 3rem;
   border-bottom: 1px solid $gray-lighter;
   width: 100%;
-  padding: 1em 0;  
+  padding: 1em 0;
   @include MQ(M){
     margin-bottom: 4rem;
     display: table;
     height: 50px;
   }
-  
-  /* 
+
+  /*
    * Special media query hack for small tablet screen.
    * Due to overlap of menu toggle and the logo.
    */
@@ -244,7 +244,7 @@ img {
 
 .header .header-logo img {
   text-align: center;
-  margin: 0 auto; 
+  margin: 0 auto;
 }
 
 .header .header-logo a {
@@ -267,8 +267,8 @@ img {
   }
 }
 
-.header .header-title h3 { 
-  margin-bottom: 15px; 
+.header .header-title h3 {
+  margin-bottom: 15px;
   small {
     padding-left: 10px;
   }
@@ -285,8 +285,8 @@ img {
 /*
  * Sidebar
  *
- * The off-canvas sidebar, will be triggered by toggle button which will 
- * rendered on the top left corner. 
+ * The off-canvas sidebar, will be triggered by toggle button which will
+ * rendered on the top left corner.
  *
  */
 
@@ -312,8 +312,8 @@ img {
 
 /* Sidebar content */
 
-.sidebar { 
-  text-align: center; 
+.sidebar {
+  text-align: center;
   padding: 1em;
 }
 
@@ -325,11 +325,10 @@ img {
 
 .sidebar .sidebar-info { padding: 1em 0; }
 
-.sidebar img { 
+.sidebar img {
   width: 80px;
   height: 80px;
-  margin: 0 auto;   
-  border-radius: 50%;
+  margin: 0 auto;
 }
 
 .sidebar .sidebar-info p { @include font-size(16px); }
@@ -362,7 +361,7 @@ img {
   background: lighten($color-1, 3%);
 }
 
-.sidebar .sidebar-nav .sidebar-nav-item.active { 
+.sidebar .sidebar-nav .sidebar-nav-item.active {
   background-color: darken($color-1, 2%);
 }
 
@@ -379,7 +378,7 @@ img {
   background-repeat: no-repeat;
   background-position: center center;
 }
- 
+
 /* Style the `label` that we use to target the `.sidebar-checkbox` */
 .sidebar-toggle {
   position: absolute;
@@ -389,7 +388,6 @@ img {
   width: 44px;
   height: 44px;
   background: #FFF;
-  border-radius: .4em;
   box-shadow: 0 0 10px rgba(#000, .4);
   cursor: pointer;
   @extend .wc-img-replace;
@@ -457,7 +455,7 @@ img {
         top: 4px;
         width: 10px;
         @include transform(rotate(45deg));
-    }        
+    }
   }
 }
 
@@ -475,13 +473,13 @@ img {
 
 
 
-/* 
+/*
  * Slide effect
  *
  * Handle the sliding effects of the sidebar
  *
  */
- 
+
 .main-wrapper,
 .sidebar,
 .sidebar-toggle {
@@ -498,7 +496,7 @@ img {
   -o-transition: -o-transform .5s ease-in-out;
   transition: transform .5s ease-in-out;
 }
- 
+
 #sidebar-checkbox:checked + .sidebar {
   z-index: 10;
   visibility: visible;
@@ -518,11 +516,11 @@ img {
 \*------------------------------------*/
 
 /*
- * Post/Pages 
- * Every post article can be wrapped in a container class named `.post` 
+ * Post/Pages
+ * Every post article can be wrapped in a container class named `.post`
  * and used in post layout under _layout folder.
- * Every page content also wrapped in a container named `.page` and used 
- * in page layout under _layout folder. 
+ * Every page content also wrapped in a container named `.page` and used
+ * in page layout under _layout folder.
  */
 
 .post, .page {
@@ -555,7 +553,7 @@ img {
   padding: 1.5em 0 2em 0;
   letter-spacing: 1px;
   @include MQ(M) {
-    font-size: 18px;    
+    font-size: 18px;
   }
 }
 
@@ -575,7 +573,7 @@ img {
 .related-posts ul li a {
   &:hover, &:focus {
     small {
-      color: inherit; 
+      color: inherit;
     }
   }
 }
@@ -616,9 +614,9 @@ img {
  *
  */
 
-.post .banner-image, 
-.page .banner-image, 
-.post .banner_video, 
+.post .banner-image,
+.page .banner-image,
+.post .banner_video,
 .page .banner_video {
   margin: -1em -1em 0 -1em;
   padding-bottom: 1em;
@@ -636,8 +634,8 @@ img {
 \*------------------------------------*/
 
 /*
- * 
- * Disqus comments, share-buttons 
+ *
+ * Disqus comments, share-buttons
  */
 
 .comments {
@@ -675,13 +673,67 @@ img {
   @include MQ(M) {
     padding: 1em .5em 0 0;
     @include column(.5);
-  } 
+  }
 }
 
-.author, .share-buttons { 
+.author, .share-buttons {
   h5, h6 { margin: 0 0 4px 0; }
   h5 { text-transform: uppercase; color: $gray-darker; }
   p { @include font-size(14px); }
   img { float:left; margin-right: 1em; }
   ul { margin-bottom: 0; }
+}
+
+h1.post-title {
+  margin-top: 0;
+}
+
+.post-meta {
+  padding: 0;
+}
+
+.header-logo img {
+  height: 50px;
+}
+
+.social-media {
+  margin-top: 1em;
+}
+
+body {
+  background-color: #4e4e4e;
+}
+
+.header {
+  background-color: #000;
+  border-bottom-color: #999;
+}
+
+.header-title h3 {
+  color: #fff;
+}
+
+.sidebar-toggle {
+  background-color: #024600;
+  box-shadow: none;
+}
+
+.sidebar-toggle span {
+  background-color: #fff;
+}
+
+.author img.gravatar {
+  border-radius: 50%;
+}
+
+code {
+  color: #f9f7f3;
+  background-color: #2b2b2b;
+}
+
+.post-content em {
+  padding: 2px .5em;
+  color: #2b2b2b;
+  background-color: #e8e8e8;
+  font-style: normal;
 }
