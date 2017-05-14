@@ -737,3 +737,8 @@ code {
   background-color: #e8e8e8;
   font-style: normal;
 }
+
+.highlight pre {
+  white-space: pre;
+  overflow-x: scroll;
+}
