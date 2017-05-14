@@ -31,4 +31,8 @@
 <meta property="og:image" content="{{ "/assets/images/" | append: page.banner_image | prepend: site.baseurl | prepend: site.url }}">
 {% endif %}
 
+{% if page.url == '/' %}
+<meta property="og:image" content="/assets/images/vim.jpg">
+{% endif %}
+
 {% endcapture %}{{ header | strip_newlines }}
