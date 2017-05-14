@@ -32,7 +32,7 @@
 {% endif %}
 
 {% if page.url == '/' %}
-<meta property="og:image" content="/assets/images/vim.jpg">
+<meta property="og:image" content="{{ "/assets/images/vim.jpg" | prepend: site.baseurl | prepend: site.url }}">
 {% endif %}
 
 {% endcapture %}{{ header | strip_newlines }}
