@@ -1,24 +1,15 @@
 ---
 layout: page
-title: About me
+title: About Vim Tricks
 permalink: /about/
-banner_image: sample-banner-image-2.jpg
-banner_image_alt: About me
+banner_image: vim.jpg
+banner_image_alt: About Vim Tricks
 ---
 
-Hi, I am Tom Warlker. I am a professional UI/UX designrer and web developer. I love being minimal and creative.
+Vim Tricks is a collection of tricks, tips, plugins, configuration recommendations and more for the [Vim text editor](http://www.vim.org/).
 
-I prefer to serve with Php and Ruby based stacks and also love to work 
-on [Jekyll][jekyll] and [Processwire CMS/CMF][pw].
+Built and maintained by [Colin Bartlett](https://colinabartlett.com), new posts are welcomed by submitting a [PR on Github](https://github.com/cbartlett/vimtricks).
 
-### Contact me
+### Contact
 
-Say `Hello` at gayanvirajith@gmail.com or find
-me on
-
----
-
-{% include social.html %}
-
-[pw]: http://processwire.com
-[jekyll]: http://jekyllrb.com
+Questions or comments? [hello@vimtricks.com](mailto:hello@vimtricks.com)

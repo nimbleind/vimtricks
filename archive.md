@@ -2,7 +2,7 @@
 layout: page
 title: Vim Tricks Archive
 permalink: /archive/
-banner_image: sample-banner-image-3.jpg
+banner_image: vim.jpg
 ---
 
 <div>
