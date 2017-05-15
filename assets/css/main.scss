@@ -742,3 +742,41 @@ code {
   white-space: pre;
   overflow-x: scroll;
 }
+
+.books {
+  border-top: 1px solid #eee;
+  padding-top: 2em;
+}
+
+.books img {
+  display: inline;
+}
+
+.books .book {
+ width: 23%;
+}
+
+.books .row {
+  text-align: center;
+}
+
+.books .book img:first-child {
+  border: 1px solid #000;
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+  vertical-align: top;
+  max-height: 200px;
+}
+
+.books a:hover {
+  text-decoration: none;
+}
+
+.books p {
+  line-height: 1.6em;
+  font-size: 14px;
+  margin-bottom: 2em;
+}
+
+.books p.disclaimer {
+  margin-top: 2em;
+}
