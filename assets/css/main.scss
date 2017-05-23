@@ -745,8 +745,7 @@ code {
 }
 
 .books {
-  border-top: 1px solid #eee;
-  padding-top: 2em;
+  background-color: #dedede;
 }
 
 .books img {
@@ -780,4 +779,5 @@ code {
 
 .books p.disclaimer {
   margin-top: 2em;
+  margin-bottom: 0;
 }
