@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Change double quotes to single quotes
+title: Transparently encrypt files with gpg!
 date: 2017-05-22 04:31:00
 categories: Plugins
 author:
