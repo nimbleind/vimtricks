@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Transparently encrypt files with gpg!
-date: 2017-05-22 04:31:00
+date: 2017-05-23 04:31:00
 categories: Plugins
 author:
   name: 'Andrew Libby'
