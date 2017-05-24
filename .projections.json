@@ -1,0 +1,18 @@
+{
+  "_posts/*.md": {
+    "type": "post",
+    "template": [
+      "---",
+      "layout: post",
+      "title: {blank|capitalize}",
+      "date:",
+      "categories:",
+      "author:",
+      "  name:",
+      "  email:",
+      "  url:",
+      "  github:",
+      "---",
+    ]
+  }
+}
