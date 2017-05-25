@@ -16,4 +16,3 @@ quick peek at the vim help for `u` yields that `C-r` will _redo_ edits previousl
 unwound with `u`.  
 
 Yay!
-
