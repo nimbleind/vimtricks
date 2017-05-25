@@ -6,7 +6,7 @@ categories: Essentials
 author:
   name: 'Andrew Libby'
   email: 'alibby@andylibby.org'
-  url: https://github.com/alibby'
+  url: 'https://github.com/alibby'
   github: alibby
 ---
 
