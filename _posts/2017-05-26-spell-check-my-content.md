@@ -48,9 +48,11 @@ different tasks. But vim loves automation, right? Just add the following somewhe
 `.vimrc` file to have vim automagically set spell when you edit a file
 it recognizes as markdown:
 
-```
+{% highlight VimL %}
+
 autocmd Filetype markdown setlocal spell
-```
+
+{% endhighlight %}
 
 Now you'll get automatic highlighting of misspelled words when you
 actually care to see them.
