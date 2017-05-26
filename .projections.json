@@ -1,6 +1,7 @@
 {
   "_posts/*.md": {
     "type": "post",
+    "dispatch": "bundle exec jekyll serve --watch --future",
     "template": [
       "---",
       "layout: post",
@@ -12,7 +13,7 @@
       "  email:",
       "  url:",
       "  github:",
-      "---",
+      "---"
     ]
   }
 }
