@@ -9,7 +9,7 @@ logourl: /assets/images/logo.png # Site logo
 author: "Colin Bartlett"
 author_thumbnail: "/assets/images/logo.png" # Author avatar
 # Theme customization - please change from the defaults!
-gems: [jekyll-paginate, jekyll-gravatar]
+gems: [jekyll-paginate, jekyll-gravatar, jekyll-sitemap]
 theme:
   # Color for sidebar bar, links, etc
   highlight_color: "#024600" #205081" # "#272935"
