@@ -1,4 +1,6 @@
-## License
+## Theme License
+
+The Gaya theme for Jekyll was used as the basis for this site and is furnished under the following license:
 
 (The MIT License)
 
