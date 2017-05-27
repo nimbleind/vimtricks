@@ -50,5 +50,3 @@ after selecting with `V`
 
 Lastly, the command that performs formatting can be set using `:set equalprg`.
 See `:help =` and `:help equalprg` for more details.
-
-
