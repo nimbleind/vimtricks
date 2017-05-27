@@ -2,7 +2,7 @@
 layout: post
 title: Code Reformatting
 date: 2017-05-27 08:59:16
-categories: Essentials
+categories: Essentials Plugins
 author:
   name: 'Andrew Libby'
   email: 'alibby@andylibby.org'
