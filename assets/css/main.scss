@@ -732,11 +732,20 @@ code {
   background-color: #2b2b2b;
 }
 
+.post em, .post-content em, code {
+  font-size: 17px;
+}
+
 .post em, .post-content em {
   padding: 2px .5em;
   color: #2b2b2b;
   background-color: #e8e8e8;
   font-style: normal;
+  font-family: Menlo, Monaco, "Courier New", monospace;
+}
+
+pre code {
+  font-size: 15px;
 }
 
 .highlight pre {
