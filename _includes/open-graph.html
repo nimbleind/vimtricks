@@ -29,9 +29,7 @@
 
 {% if page.banner_image %}
 <meta property="og:image" content="{{ "/assets/images/" | append: page.banner_image | prepend: site.baseurl | prepend: site.url }}">
-{% endif %}
-
-{% if page.url == '/' %}
+{% else %}
 <meta property="og:image" content="{{ "/assets/images/vim.jpg" | prepend: site.baseurl | prepend: site.url }}">
 {% endif %}
 
