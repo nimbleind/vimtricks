@@ -5,6 +5,6 @@ permalink: /contributors/
 ---
 
 * [Colin Bartlett](https://colinabartlett.com)
-* [Andrew Libby](https://github.com/alibby)
 * [Michael Kelly](https://thebadmonkeydev.github.io)
+* [Andrew Libby](https://github.com/alibby)
 * [...you!](https://github.com/cbartlett/vimtricks)
