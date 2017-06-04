@@ -4,7 +4,7 @@ title: "Open file to line"
 date: 2017-05-18 14:01:05
 categories: Essentials
 author:
-  name: 'Andy Libby'
+  name: 'Andrew Libby'
   email: 'alibby@andylibby.org'
   url: 'https://github.com/alibby'
   github: alibby
