@@ -4,7 +4,9 @@ title: Contributors
 permalink: /contributors/
 ---
 
-* [Colin Bartlett](https://colinabartlett.com)
-* [Michael Kelly](https://thebadmonkeydev.github.io)
-* [Andrew Libby](https://github.com/alibby)
-* [...you!](https://github.com/cbartlett/vimtricks)
+{% assign authors = site.posts | map: 'author' | uniq | sort: 'name' %}
+
+{% for author in authors %}* [{{author.name}}]({{author.url}})
+{% endfor %}
+
+Want to contribute a Vim Trick? [Fork our repo](https://github.com/cbartlett/vimtricks).
