@@ -687,10 +687,16 @@ img {
 
 h1.post-title {
   margin-top: 0;
+  @include MQ(S){
+    font-size: 34px;
+  }
 }
 
 .post-meta {
   padding: 0;
+  @include MQ(S){
+    font-size: 18px;
+  }
 }
 
 .header-logo img {
@@ -804,4 +810,8 @@ sup {
 
 sub {
   bottom: -0.25em;
+}
+
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+  line-height: 1.1;
 }
