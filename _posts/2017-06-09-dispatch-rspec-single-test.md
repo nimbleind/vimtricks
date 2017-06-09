@@ -10,8 +10,8 @@ author:
   github: alibby
 ---
 
-If you use Tim Popes [vim-dispatch](https://github.com/tpope/vim-dispatch), you
-likely have adtopted his setup to use the F9 key to run tests. It's not
+If you use Tim Pope's [vim-dispatch](https://github.com/tpope/vim-dispatch), you
+likely have adopted his setup to use the F9 key to run tests. It's not
 uncommon that I wish to invoke a particular test example.
 
 This is possible from the command line for line 32 of some_model.rb
@@ -30,7 +30,7 @@ nnoremap <F8> :execute "Dispatch bundle exec rspec %: . line(".")<CR>
 
 {% endhighlight %}
 
-There are two niceites that can come out of this.
+There are two niceties that can come out of this.
 
 You can focus on a particular test when coding, running only that test.  Once
 this test passes, I then switch over to F9 invoking all the tests for the
@@ -39,6 +39,4 @@ current file.
 Additionally
 [pry-byebug](https://github.com/deivid-rodriguez/pry-byebug) can be placed in the
 particular example being executed, or anywhere in the code path being tested
-for that matter.  This allows for quick, repetitive debugging/ investigating.
-
-
+for that matter.  This allows for quick, repetitive debugging/investigating.
