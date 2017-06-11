@@ -20,3 +20,16 @@ Vim allows the line numbers to show relative to current cursor position
 with `:set relativenumber`. Here's a short demonstration:
 
 <asciinema-player src="/assets/screencasts/relative.json"></asciinema-player>
+
+With `relativenumber` enabled, one can simply glance at the number above or
+below the current line, rather than do mental math.
+
+Since Vim 7.4, you can also enable `set number` at the same time so instead of
+your current line number showing _0_ it will show the normal, absolute line
+number. Therefore, I recommend you upgrade to Vim 7.4 and use the following
+configuration:
+
+{% highlight VimL %}
+set relativenumber
+set number
+{% endhighlight %}
