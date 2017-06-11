@@ -50,6 +50,7 @@
 
     {% include style.html %}
     <link rel="stylesheet" href="/assets/css/syntax.css">
+    <link rel="stylesheet" href="/assets/css/asciinema-player.css" />
   </head>
   <body>
     {% include sidebar.html %}
@@ -112,6 +113,7 @@
     </script>
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
     <script async type="text/javascript" src="{{ '/assets/js/gaya.min.js' | prepend: site.baseurl | prepend: site.url }}"></script>
+    <script async type="text/javascript" src="{{ '/assets/js/asciinema-player.js' | prepend: site.baseurl | prepend: site.url }}"></script>
 
     {% comment %} Google Analytics {% endcomment %}
     {% include google-analytics.html %}
