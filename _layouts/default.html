@@ -2,7 +2,7 @@
 <!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
 <!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
 <!--[if IE 8]>    <html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->  
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
   <head>
     <meta charset="utf-8">
     {% comment %}
@@ -13,9 +13,9 @@
     <title>{% if page.browser_title %}{{ page.browser_title }}{% elsif page.title %}{{ page.title | append: ' - ' | append: site.title }}{% else %}{{ site.title }}{% endif %}</title>
     <meta name="description" content="{% if page.meta_description %}{{ page.meta_description }}{% else %}{{ site.description }}{% endif %}">
     {% include open-graph.html %}
-  
+
     {% comment %}
-    The meta tag below is useful when you want to verify the website to 
+    The meta tag below is useful when you want to verify the website to
     Google web-master tools in an alternative way. Simply configure your site verification key on
     _config.yml given by Google web-master tools.
     {% endcomment %}
@@ -37,7 +37,7 @@
     <link rel="apple-touch-icon" sizes="180x180" href="/assets/images/apple-touch-icon-180x180.png" />
     <link rel="prefetch" href="{{ site.url }}">
     <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
-    <link rel="stylesheet" 
+    <link rel="stylesheet"
     href="{{ '/assets/css/main.css' | prepend: site.baseurl | prepend: site.url }}">
 
     <!-- IE Fixes -->
@@ -58,19 +58,19 @@
         <div class="container">
           <div class="header-logo">{% include logo.html %}</div>
           <div class="header-title">
-            <a href="{{ '' | prepend: site.baseurl | prepend: site.url | append: '/' }}" 
-              title="{{ site.title }}"> 
+            <a href="{{ '' | prepend: site.baseurl | prepend: site.url | append: '/' }}"
+              title="{{ site.title }}">
               <h3>{{ site.title }}<small>{{ site.tagline }}</small></h3>
             </a>
-          </div>        
-        </div>  
+          </div>
+        </div>
       </div>
-      
+
       <div class="container content">
           {{ content }}
       </div>
       <a href="#0" class="wc-top">Top</a>
-      
+
     </div>
 
     <label for="sidebar-checkbox" class="sidebar-toggle">
@@ -112,8 +112,8 @@
     </script>
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
     <script async type="text/javascript" src="{{ '/assets/js/gaya.min.js' | prepend: site.baseurl | prepend: site.url }}"></script>
-    
+
     {% comment %} Google Analytics {% endcomment %}
-    {% include google-analytics.html %}   
+    {% include google-analytics.html %}
   </body>
 </html>
