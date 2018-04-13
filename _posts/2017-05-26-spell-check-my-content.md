@@ -36,7 +36,7 @@ _These apply when the cursor is on a word_
 - `zw` - Mark a word as bad (remove it from the good words list if it
 exists there)
 - `zW` - Mark a word as bad (remove it from the internal word list if it
--  z=  - Suggest corrections for a misspelled word
+- `z=`  - Suggest corrections for a misspelled word
 exists there)
 
 **Automate All The Things**
