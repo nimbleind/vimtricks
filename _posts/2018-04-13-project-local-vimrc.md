@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 2018 04 13 project local vimrc
+title: Project local vimrc
 date: 2018-04-13 14:53:44
 categories: Essentials
 author:
@@ -35,4 +35,3 @@ Note, while this is not a vim specific recommendation, I also did not want to
 leak .vimrc into project/ customer .gitignore files.  So I place .vimrc in
 my .git/info/exclude - which allows for application of rules like .gitignore but
 is never checked in/ tracked by git.
-
