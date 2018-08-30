@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 2018 05 31 stay in search mode
+title: Stay in search mode
 date: 2018-05-31 10:05:30
 categories: Essentials
 author:
