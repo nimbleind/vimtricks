@@ -9,4 +9,4 @@ permalink: /contributors/
 {% for author in authors %}* [{{author.name}}]({{author.url}})
 {% endfor %}
 
-Want to contribute a Vim Trick? [Fork our repo](https://github.com/cbartlett/vimtricks).
+Want to contribute a Vim Trick? [Email us!](mailto:hi@vimtricks.com).
